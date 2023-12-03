@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>McDonut</title>
+</head>
+<body>
+    <header>
+        <h1><span style="color:#e4c37d">Mc</span> 
+            <span style="color:#fc7be6">Donut</span></h1>
+    
+        <button onclick="toggleCart()">Toggle Cart</button>
+    </header>
+    
+    <section id="products">
+        <div class="product" onclick="addToCart('Elegant Watch', 0.54)">
+            <img src="https://dunkindonuts.com.sg/wp-content/uploads/2015/10/10_StrawberryFrosted_edit.png">
+            <h3>Strawberry Candy Sprinkle</h3>
+            <p>$0.54</p>
+        </div>
+        
+        <div class="product" onclick="addToCart('Designer Bag', 0.54)">
+            <img src="https://s3.amazonaws.com/cms.ipressroom.com/285/files/20196/Chocolate+Frosted.png">
+            <h3>Chocolate Candy Sprinkle</h3>
+            <p>$0.54</p>
+        </div>
+
+        <div class="product" onclick="addToCart('Designer Bag', 0.54)">
+            <img src="https://www.pmc.qa/web/image/product.template/60992/image_1024?unique=1ffd131">
+            <h3>Bavarian Filled</h3>
+            <p>$0.54</p>
+        </div>
+    </section>
+
+    <aside id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">99.99</span></p>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
